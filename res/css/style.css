@@ -4,10 +4,11 @@
 }
 body{
     background: radial-gradient(
-        rgb(62, 62, 62) 0%,
+        rgb(107, 0, 70) 0%,
         black 100%
     );
     height: 100vh;
+    overflow: hidden;
 }
 #menu{
     display: flex;
@@ -16,7 +17,7 @@ body{
 }
 #startButton{
     color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 0);
+    background-color: rgb(255, 0, 221);
     border: none;
     border-radius: 5px;
     font-size: 24px;
@@ -28,7 +29,7 @@ body{
     transition: 0.2s ease;
 }
 #startButton:hover{
-    box-shadow: rgb(255, 255, 0);
+    box-shadow: rgb(212, 0, 255);
     filter: blur(.5px);
 }
 #point{
@@ -42,12 +43,18 @@ body{
     justify-content: center;
     align-items: center;
     border: 8px solid rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 221);
     cursor: pointer;
     filter: blur(1px);
-    transition: blur(.5px);
+    transition: 0.4s ease;
 }
 #point:hover{
-    box-shadow: 0 0 50px rgb(255, 255, 0);
+    box-shadow: 0 0 50px rgb(212, 0, 255);
     filter: blur(.5px);
+}
+
+#showTime {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    text-align: center;
 }
